@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Features</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Client Features</h1>
+    <table id="clientsTable">
+        <tr>
+            <th>Client ID</th>
+            <th>IP</th>
+            <th>Port</th>
+            <th>Offset</th>
+            <th>Features</th>
+        </tr>
+        <!-- Clients will be dynamically inserted here -->
+    </table>
+
+    <h2>Add Feature to Client</h2>
+    <form id="addFeatureForm">
+        <label for="client_id">Client ID:</label><br>
+        <input type="text" id="client_id" name="client_id"><br>
+        <label for="feature">Feature:</label><br>
+        <input type="text" id="feature" name="feature"><br>
+        <label for="value">Value:</label><br>
+        <input type="text" id="value" name="value"><br>
+        <input type="submit" value="Add Feature">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
